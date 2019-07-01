@@ -25,3 +25,20 @@ a {
     font-size: 3.6rem;
   }
 }
+
+.heading-secondary {
+  display: block;
+  color: $color-blue-dark-5;
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: $color-grey-dark-1;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
