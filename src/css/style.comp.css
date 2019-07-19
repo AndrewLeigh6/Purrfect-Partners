@@ -14,7 +14,7 @@ body {
 body {
   font-family: "Signika", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
 a {
   text-decoration: none; }
@@ -51,12 +51,52 @@ a {
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 5rem; }
+
+.u-text-center {
+  text-align: center; }
+
 .button {
   color: #f5f7fa;
-  background-color: #0967d2;
   padding: 1.5rem 4.5rem;
   border-radius: 5px;
-  font-size: 3.6rem; }
+  display: inline-block;
+  text-align: center; }
+  .button--small {
+    font-size: 1.8rem; }
+  .button--medium {
+    font-size: 2.4rem; }
+  .button--large {
+    font-size: 3.6rem; }
+  .button--primary {
+    background-color: #0967d2; }
+  .button--secondary {
+    background-color: #e12d39; }
+
+.featured-profile {
+  display: flex;
+  justify-content: center; }
+  .featured-profile__card {
+    background-color: #0967d2;
+    max-width: 35rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px; }
+  .featured-profile__details {
+    color: #e6f6ff; }
+  .featured-profile__name {
+    font-size: 3.6rem; }
+  .featured-profile__age {
+    font-size: 2.4rem; }
+  .featured-profile__highlight {
+    color: #bae3ff; }
+  .featured-profile__job {
+    font-size: 2.4rem; }
+  .featured-profile__description {
+    font-size: 1.8rem; }
 
 .header {
   background-image: url("../img/banner.png");
@@ -80,3 +120,11 @@ a {
   .section-about__text {
     max-width: 50rem;
     margin-right: 10rem; }
+
+.section-featured {
+  background-color: #f5f7fa;
+  padding: 10rem 0; }
+
+.featured-profiles {
+  display: flex;
+  justify-content: space-evenly; }
