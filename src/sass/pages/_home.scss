@@ -9,3 +9,13 @@
     margin-right: 10rem;
   }
 }
+
+.section-featured {
+  background-color: $color-grey-light-1;
+  padding: 10rem 0;
+}
+
+.featured-profiles {
+  display: flex;
+  justify-content: space-evenly;
+}

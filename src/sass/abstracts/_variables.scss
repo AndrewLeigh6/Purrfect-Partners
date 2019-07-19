@@ -1,5 +1,9 @@
 // Font sizes
-$default-font-size: 1.6rem;
+$font-smallest: 1.8rem;
+$font-small: 2rem;
+$font-medium: 2.4rem;
+$font-large: 3.6rem;
+$font-largest: 9.6rem;
 
 // Colours
 $color-blue-light-1: #e6f6ff;
@@ -27,3 +31,6 @@ $color-grey-dark-4: #52606d;
 $color-grey-dark-5: #616e7c;
 
 $color-red-dark: #e12d39;
+
+// Misc
+$border-radius: 5px;

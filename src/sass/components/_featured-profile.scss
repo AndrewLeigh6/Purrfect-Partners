@@ -1,0 +1,41 @@
+.featured-profile {
+  display: flex;
+  justify-content: center;
+
+  &__photo {
+  }
+
+  &__card {
+    background-color: $color-blue-dark-5;
+    max-width: 35rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: $border-radius;
+  }
+
+  &__details {
+    color: $color-blue-light-1;
+  }
+
+  &__name {
+    font-size: $font-large;
+  }
+
+  &__age {
+    font-size: $font-medium;
+  }
+
+  &__highlight {
+    color: $color-blue-light-2;
+  }
+
+  &__job {
+    font-size: $font-medium;
+  }
+
+  &__description {
+    font-size: $font-smallest;
+  }
+}

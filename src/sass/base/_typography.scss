@@ -1,7 +1,7 @@
 body {
   font-family: "Signika", sans-serif;
   font-weight: 400;
-  font-size: $default-font-size;
+  font-size: $font-smallest;
 }
 
 a {
@@ -17,25 +17,25 @@ a {
   align-items: center;
 
   &--main {
-    font-size: 9.6rem;
+    font-size: $font-largest;
     line-height: 1.2;
   }
 
   &--sub {
-    font-size: 3.6rem;
+    font-size: $font-large;
   }
 }
 
 .heading-secondary {
   display: block;
   color: $color-blue-dark-5;
-  font-size: 3.6rem;
+  font-size: $font-large;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: $font-small;
   color: $color-grey-dark-1;
 
   &:not(:last-child) {

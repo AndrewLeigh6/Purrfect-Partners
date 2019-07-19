@@ -1,7 +1,27 @@
 .button {
   color: $color-grey-light-1;
-  background-color: $color-blue-dark-5;
   padding: 1.5rem 4.5rem;
   border-radius: 5px;
-  font-size: 3.6rem;
+  display: inline-block;
+  text-align: center;
+
+  &--small {
+    font-size: $font-smallest;
+  }
+
+  &--medium {
+    font-size: $font-medium;
+  }
+
+  &--large {
+    font-size: $font-large;
+  }
+
+  &--primary {
+    background-color: $color-blue-dark-5;
+  }
+
+  &--secondary {
+    background-color: $color-red-dark;
+  }
 }
