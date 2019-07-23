@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 750px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -29,8 +32,19 @@ a {
   .heading-primary--main {
     font-size: 9.6rem;
     line-height: 1.2; }
+    @media only screen and (max-width: 750px) {
+      .heading-primary--main {
+        font-size: 6rem;
+        line-height: 1;
+        text-align: center; } }
   .heading-primary--sub {
     font-size: 3.6rem; }
+    @media only screen and (max-width: 750px) {
+      .heading-primary--sub {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+        text-align: center;
+        padding: 0 5rem; } }
 
 .heading-secondary {
   display: block;
@@ -69,6 +83,9 @@ a {
     font-size: 2.4rem; }
   .button--large {
     font-size: 3.6rem; }
+    @media only screen and (max-width: 750px) {
+      .button--large {
+        font-size: 2.4rem; } }
   .button--primary {
     background-color: #0967d2; }
   .button--secondary {
@@ -106,6 +123,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 750px) {
+    .header {
+      background-position: 18%;
+      min-height: 70vh; } }
   .header__text-box {
     display: flex;
     flex-direction: column;
