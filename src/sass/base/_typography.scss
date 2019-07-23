@@ -19,10 +19,23 @@ a {
   &--main {
     font-size: $font-largest;
     line-height: 1.2;
+
+    @include responsive(medium) {
+      font-size: $font-larger;
+      line-height: 1;
+      text-align: center;
+    }
   }
 
   &--sub {
     font-size: $font-large;
+
+    @include responsive(medium) {
+      font-size: $font-medium;
+      margin-top: 1rem;
+      text-align: center;
+      padding: 0 5rem;
+    }
   }
 }
 

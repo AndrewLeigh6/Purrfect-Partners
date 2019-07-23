@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%; // so 1rem = 10px, since 10/16 = 0.625
+
+  @include responsive(medium) {
+    font-size: 50%; // 1rem = 8px
+  }
 }
 
 body {
