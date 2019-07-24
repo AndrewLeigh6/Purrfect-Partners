@@ -2,7 +2,31 @@
   display: flex;
   justify-content: center;
 
+  @include responsive(largest) {
+    padding: 0 5rem;
+  }
+
+  &:not(:last-child) {
+    @include responsive(largest) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  @include responsive(small) {
+    flex-direction: column;
+    padding: 0 2.5rem;
+    align-items: center;
+  }
+
   &__photo {
+    position: relative;
+    z-index: 1;
+    left: 5px;
+    max-width: 100%;
+
+    @include responsive(small) {
+      left: 0;
+    }
   }
 
   &__card {
@@ -13,10 +37,25 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: $border-radius;
+    position: relative;
+    z-index: 2;
+
+    @include responsive(medium) {
+      padding: 3.5rem;
+    }
+
+    @include responsive(small) {
+      top: -10px;
+      max-width: 31.5rem;
+    }
   }
 
   &__details {
     color: $color-blue-light-1;
+
+    @include responsive(small) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__name {
@@ -37,5 +76,21 @@
 
   &__description {
     font-size: $font-smallest;
+
+    @include responsive(medium) {
+      font-size: $font-small;
+    }
+  }
+
+  &__details {
+    color: $color-blue-light-1;
+  }
+
+  &__name {
+    font-size: $font-large;
+  }
+
+  &__age {
+    font-size: $font-medium;
   }
 }

@@ -94,6 +94,25 @@ a {
 .featured-profile {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 1300px) {
+    .featured-profile {
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 1300px) {
+    .featured-profile:not(:last-child) {
+      margin-bottom: 5rem; } }
+  @media only screen and (max-width: 550px) {
+    .featured-profile {
+      flex-direction: column;
+      padding: 0 2.5rem;
+      align-items: center; } }
+  .featured-profile__photo {
+    position: relative;
+    z-index: 1;
+    left: 5px;
+    max-width: 100%; }
+    @media only screen and (max-width: 550px) {
+      .featured-profile__photo {
+        left: 0; } }
   .featured-profile__card {
     background-color: #0967d2;
     max-width: 35rem;
@@ -101,9 +120,21 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 5px; }
+    border-radius: 5px;
+    position: relative;
+    z-index: 2; }
+    @media only screen and (max-width: 750px) {
+      .featured-profile__card {
+        padding: 3.5rem; } }
+    @media only screen and (max-width: 550px) {
+      .featured-profile__card {
+        top: -10px;
+        max-width: 31.5rem; } }
   .featured-profile__details {
     color: #e6f6ff; }
+    @media only screen and (max-width: 550px) {
+      .featured-profile__details {
+        margin-bottom: 5rem; } }
   .featured-profile__name {
     font-size: 3.6rem; }
   .featured-profile__age {
@@ -114,6 +145,15 @@ a {
     font-size: 2.4rem; }
   .featured-profile__description {
     font-size: 1.8rem; }
+    @media only screen and (max-width: 750px) {
+      .featured-profile__description {
+        font-size: 2rem; } }
+  .featured-profile__details {
+    color: #e6f6ff; }
+  .featured-profile__name {
+    font-size: 3.6rem; }
+  .featured-profile__age {
+    font-size: 2.4rem; }
 
 .header {
   background-image: url("../img/banner.png");
@@ -161,3 +201,6 @@ a {
 .featured-profiles {
   display: flex;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 1300px) {
+    .featured-profiles {
+      flex-direction: column; } }
