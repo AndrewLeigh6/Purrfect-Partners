@@ -1,0 +1,56 @@
+.membership-card {
+  background-color: $white;
+  border-top: solid 3px $color-red-dark;
+  padding: 3rem 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include responsive(largest) {
+    padding: 2.5rem 3.5rem;
+  }
+
+  @include responsive(large) {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__tier-name {
+    text-transform: uppercase;
+    color: $color-red-dark;
+    font-size: $font-medium;
+    margin-bottom: 6rem;
+  }
+
+  &__price {
+    color: $color-grey-dark-1;
+    font-size: $font-large;
+    margin-bottom: 6rem;
+  }
+
+  &__perks {
+    margin-bottom: 10rem;
+    line-height: $font-large;
+  }
+
+  &__perk {
+    color: $color-grey-dark-2;
+    font-size: $font-smallest;
+  }
+
+  &__emphasis {
+    color: $color-red-dark;
+    font-size: $font-large;
+
+    &--small {
+      font-size: $font-medium;
+    }
+  }
+
+  &__de-emphasis {
+    color: $color-grey-light-4;
+    font-size: $font-smallest;
+  }
+}

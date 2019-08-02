@@ -45,6 +45,10 @@ a {
   font-size: $font-large;
   font-weight: 400;
   margin-bottom: 2rem;
+
+  &--light {
+    color: $color-blue-light-1;
+  }
 }
 
 .paragraph {

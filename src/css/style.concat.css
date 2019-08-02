@@ -52,6 +52,8 @@ a {
   font-size: 3.6rem;
   font-weight: 400;
   margin-bottom: 2rem; }
+  .heading-secondary--light {
+    color: #e6f6ff; }
 
 .paragraph {
   font-size: 2rem;
@@ -120,7 +122,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     position: relative;
     z-index: 2; }
     @media only screen and (max-width: 750px) {
@@ -129,7 +132,8 @@ a {
     @media only screen and (max-width: 550px) {
       .featured-profile__card {
         top: -10px;
-        max-width: 31.5rem; } }
+        max-width: 31.2rem;
+        border-radius: 0 0 5px 5px; } }
   .featured-profile__details {
     color: #e6f6ff; }
     @media only screen and (max-width: 550px) {
@@ -154,6 +158,44 @@ a {
     font-size: 3.6rem; }
   .featured-profile__age {
     font-size: 2.4rem; }
+
+.membership-card {
+  background-color: #fff;
+  border-top: solid 3px #e12d39;
+  padding: 3rem 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media only screen and (max-width: 1300px) {
+    .membership-card {
+      padding: 2.5rem 3.5rem; } }
+  @media only screen and (max-width: 950px) {
+    .membership-card:not(:last-child) {
+      margin-bottom: 5rem; } }
+  .membership-card__tier-name {
+    text-transform: uppercase;
+    color: #e12d39;
+    font-size: 2.4rem;
+    margin-bottom: 6rem; }
+  .membership-card__price {
+    color: #1f2933;
+    font-size: 3.6rem;
+    margin-bottom: 6rem; }
+  .membership-card__perks {
+    margin-bottom: 10rem;
+    line-height: 3.6rem; }
+  .membership-card__perk {
+    color: #323f4b;
+    font-size: 1.8rem; }
+  .membership-card__emphasis {
+    color: #e12d39;
+    font-size: 3.6rem; }
+    .membership-card__emphasis--small {
+      font-size: 2.4rem; }
+  .membership-card__de-emphasis {
+    color: #9aa5b1;
+    font-size: 1.8rem; }
 
 .header {
   background-image: url("../img/banner.png");
@@ -204,3 +246,20 @@ a {
   @media only screen and (max-width: 1300px) {
     .featured-profiles {
       flex-direction: column; } }
+
+.section-memberships {
+  background-color: #0967d2;
+  padding: 10rem 0; }
+
+.memberships-container {
+  display: flex;
+  justify-content: space-evenly; }
+  @media only screen and (max-width: 950px) {
+    .memberships-container {
+      flex-direction: column;
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 0 5rem; } }
+  @media only screen and (max-width: 750px) {
+    .memberships-container {
+      max-width: 50rem; } }

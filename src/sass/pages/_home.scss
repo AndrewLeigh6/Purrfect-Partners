@@ -39,3 +39,24 @@
     flex-direction: column;
   }
 }
+
+.section-memberships {
+  background-color: $color-blue-dark-5;
+  padding: 10rem 0;
+}
+
+.memberships-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  @include responsive(large) {
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+
+  @include responsive(medium) {
+    max-width: 50rem;
+  }
+}
