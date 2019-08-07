@@ -1,0 +1,24 @@
+.testimonial {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  display: flex;
+  max-width: 85rem;
+  align-items: flex-start;
+  padding: 6rem 8rem;
+  background-color: $white;
+
+  &__image {
+    margin-right: 6rem;
+  }
+
+  &__text {
+    font-size: $font-smallest;
+    color: $color-grey-dark-2;
+  }
+
+  &__author {
+    font-size: $font-smallest;
+    color: $color-blue-dark-5;
+    margin-top: 1.5rem;
+  }
+}
