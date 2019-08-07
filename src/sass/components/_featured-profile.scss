@@ -23,6 +23,7 @@
     z-index: 1;
     left: 5px;
     max-width: 100%;
+    box-shadow: $box-shadow;
 
     @include responsive(small) {
       left: 0;
@@ -40,6 +41,7 @@
     border-bottom-right-radius: $border-radius;
     position: relative;
     z-index: 2;
+    box-shadow: $box-shadow;
 
     @include responsive(medium) {
       padding: 3.5rem;
