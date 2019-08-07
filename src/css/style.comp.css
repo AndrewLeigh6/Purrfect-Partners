@@ -78,7 +78,8 @@ a {
   padding: 1.5rem 4.5rem;
   border-radius: 5px;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25); }
   .button--small {
     font-size: 1.8rem; }
   .button--medium {
@@ -111,7 +112,8 @@ a {
     position: relative;
     z-index: 1;
     left: 5px;
-    max-width: 100%; }
+    max-width: 100%;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25); }
     @media only screen and (max-width: 550px) {
       .featured-profile__photo {
         left: 0; } }
@@ -125,7 +127,8 @@ a {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25); }
     @media only screen and (max-width: 750px) {
       .featured-profile__card {
         padding: 3.5rem; } }
@@ -166,7 +169,8 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 1300px) {
     .membership-card {
       padding: 2.5rem 3.5rem; } }
@@ -196,6 +200,52 @@ a {
   .membership-card__de-emphasis {
     color: #9aa5b1;
     font-size: 1.8rem; }
+
+.testimonial {
+  border-radius: 5px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  max-width: 85rem;
+  align-items: flex-start;
+  padding: 6rem 8rem;
+  background-color: #fff; }
+  @media only screen and (max-width: 950px) {
+    .testimonial {
+      padding: 6rem;
+      max-width: 70rem; } }
+  @media only screen and (max-width: 750px) {
+    .testimonial {
+      flex-direction: column;
+      align-items: center; } }
+  .testimonial__image {
+    margin-right: 6rem; }
+    @media only screen and (max-width: 750px) {
+      .testimonial__image {
+        margin-bottom: 4rem;
+        margin-right: 0; } }
+  .testimonial__text {
+    font-size: 1.8rem;
+    color: #323f4b;
+    position: relative; }
+    @media only screen and (max-width: 750px) {
+      .testimonial__text {
+        text-align: center; } }
+    .testimonial__text::before {
+      content: "\201C";
+      font-size: 14.4rem;
+      line-height: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: rgba(9, 103, 211, 0.15);
+      transform: translate(-70%, -20%); }
+  .testimonial__author {
+    font-size: 1.8rem;
+    color: #0967d2;
+    margin-top: 1.5rem; }
+    @media only screen and (max-width: 750px) {
+      .testimonial__author {
+        text-align: center; } }
 
 .header {
   background-image: url("../img/banner.png");
@@ -263,3 +313,12 @@ a {
   @media only screen and (max-width: 750px) {
     .memberships-container {
       max-width: 50rem; } }
+
+.section-testimonials {
+  padding: 15rem 0;
+  background: linear-gradient(180deg, #0967d2 0%, #0967d2 55.99%, #ffffff 56%); }
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem; }
