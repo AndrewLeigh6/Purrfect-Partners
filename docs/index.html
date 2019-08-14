@@ -234,25 +234,70 @@
         </h2>
 
         <div class="testimonials-container">
-          <div class="testimonial">
-            <img
-              class="testimonial__image"
-              src="./img/testimonial-1.png"
-              alt=""
-            />
-            <div class="testimonial__text-container">
-              <p class="testimonial__text">
-                Cras pharetra ligula eget leo rutrum, in blandit lectus
-                accumsan. Suspendisse consequat, quam tincidunt pretium
-                ultrices, velit diam efficitur arcu, nec tincidunt risus tellus
-                ornare augue. Curabitur at finibus purus, et porttitor mauris.
-                Phasellus lacinia quam nunc, eu lacinia odio iaculis eu.
-              </p>
-              <p class="testimonial__author">Cat Damon, Aged 4</p>
+          <div class="carousel js-carousel">
+            <div class="carousel__slides">
+              <div class="testimonial">
+                <img
+                  class="testimonial__image"
+                  src="./img/testimonial-1.png"
+                  alt=""
+                />
+                <div class="testimonial__text-container">
+                  <p class="testimonial__text">
+                    Cras pharetra ligula eget leo rutrum, in blandit lectus
+                    accumsan. Suspendisse consequat, quam tincidunt pretium
+                    ultrices, velit diam efficitur arcu, nec tincidunt risus
+                    tellus ornare augue. Curabitur at finibus purus, et
+                    porttitor mauris. Phasellus lacinia quam nunc, eu lacinia
+                    odio iaculis eu.
+                  </p>
+                  <p class="testimonial__author">Cat Damon, Aged 4</p>
+                </div>
+              </div>
+              <div class="testimonial">
+                <img
+                  class="testimonial__image"
+                  src="./img/testimonial-1.png"
+                  alt=""
+                />
+                <div class="testimonial__text-container">
+                  <p class="testimonial__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce sapien nunc, semper fermentum augue eu, viverra
+                    condimentum tortor. Morbi ullamcorper interdum lectus, id
+                    aliquam nisi egestas ac. Quisque dictum neque malesuada est
+                    luctus rutrum.
+                  </p>
+                  <p class="testimonial__author">Catrick Swayze, Aged 9</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <div
+                class="carousel__arrow-container carousel__arrow-container--left"
+              >
+                <svg class="carousel__arrow">
+                  <use xlink:href="./img/chevron-left.svg#chevron-left"></use>
+                </svg>
+              </div>
+              <div
+                class="carousel__arrow-container carousel__arrow-container--right"
+              >
+                <svg class="carousel__arrow">
+                  <use xlink:href="./img/chevron-right.svg#chevron-right"></use>
+                </svg>
+              </div>
+              <div class="carousel__dots">
+                <span class="carousel__dot carousel__dot--active"></span>
+                <span class="carousel__dot"></span>
+                <span class="carousel__dot"></span>
+                <span class="carousel__dot"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
