@@ -367,9 +367,11 @@ a {
 
 .section-testimonials {
   padding: 15rem 0;
-  background: linear-gradient(180deg, #0967d2 0%, #0967d2 55.99%, #ffffff 56%); }
+  background: linear-gradient(180deg, #0967d2 0%, #0967d2 49.99%, #ffffff 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .testimonials-container {
   display: flex;
-  justify-content: center;
   padding: 0 5rem; }
