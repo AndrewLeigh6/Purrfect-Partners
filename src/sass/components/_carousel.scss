@@ -46,4 +46,27 @@
     width: 2rem;
     fill: $color-blue-dark-5;
   }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+  }
+
+  &__dot {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 1px solid $color-blue-dark-5;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &--active {
+      background-color: $color-blue-dark-5;
+      border: none;
+    }
+  }
 }
