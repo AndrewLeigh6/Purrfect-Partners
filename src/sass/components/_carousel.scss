@@ -55,10 +55,11 @@
 
   &__dot {
     display: inline-block;
-    height: 1rem;
-    width: 1rem;
+    height: 1.2rem;
+    width: 1.2rem;
     border-radius: 50%;
     border: 1px solid $color-blue-dark-5;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-right: 1rem;
