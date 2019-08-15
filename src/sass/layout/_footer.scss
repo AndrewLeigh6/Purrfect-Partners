@@ -1,0 +1,49 @@
+.footer {
+  padding: 10rem 0;
+  background-color: $color-grey-dark-1;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 180rem;
+    padding: 0 5rem;
+
+    @include responsive(medium) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    padding: 0 2rem;
+
+    @include responsive(medium) {
+      flex: 0 1 50%;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  &__text {
+    list-style-type: none;
+    color: $color-grey-light-3;
+    font-size: $font-small;
+
+    &:not(:last-child):not(&--heading) {
+      margin-bottom: 0.5rem;
+    }
+
+    &--heading {
+      color: $color-grey-light-1;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $white;
+    }
+  }
+}
