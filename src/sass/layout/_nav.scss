@@ -1,0 +1,36 @@
+$line-height: 0.5rem;
+
+.nav {
+  position: fixed;
+  top: 3rem;
+  left: 4rem;
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-blue-dark-5;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border: 3px solid $white;
+    cursor: pointer;
+    box-shadow: $box-shadow-subtle;
+    transition: 0.5s all;
+  }
+
+  &__line {
+    line-height: $line-height;
+    margin-bottom: 0.6rem;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: $line-height;
+      width: 3rem;
+      border-radius: $border-radius;
+      background-color: $white;
+    }
+  }
+}
