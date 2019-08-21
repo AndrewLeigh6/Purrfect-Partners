@@ -17,6 +17,10 @@ a {
   justify-content: center;
   align-items: center;
 
+  @include responsive(small) {
+    padding: 0 3rem;
+  }
+
   &--main {
     font-size: $font-largest;
     line-height: 1.2;
