@@ -17,14 +17,39 @@
     />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="nav__icon">
-          <span class="nav__line"></span>
-          <span class="nav__line"></span>
-          <span class="nav__line"></span>
-        </div>
-      </nav>
+    <header class="header" id="section-header">
+      <div class="navigation">
+        <input
+          type="checkbox"
+          id="toggle-navigation"
+          class="navigation__checkbox"
+        />
+        <label for="toggle-navigation" class="navigation__icon">
+          <span class="navigation__line"></span>
+          <span class="navigation__line"></span>
+          <span class="navigation__line"></span>
+        </label>
+        <div class="navigation__background"></div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#section-header">Home</a></li>
+            <li class="navigation__item"><a href="#section-about">About</a></li>
+            <li class="navigation__item">
+              <a href="#section-featured">Featured Profiles</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#section-memberships">Memberships</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#section-testimonials">Testimonials</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#section-footer">Footer</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Purrfect Partners</span>
@@ -42,7 +67,7 @@
     </header>
 
     <main>
-      <div class="section-about">
+      <div class="section-about" id="section-about">
         <div class="section-about__text">
           <div class="section-about__heading">
             <h2 class="heading-secondary">
@@ -76,7 +101,7 @@
           />
         </div>
       </div>
-      <div class="section-featured">
+      <div class="section-featured" id="section-featured">
         <h2 class="heading-secondary u-text-center u-margin-bottom-medium">
           This week's featured profiles
         </h2>
@@ -131,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="section-memberships">
+      <div class="section-memberships" id="section-memberships">
         <h2
           class="heading-secondary heading-secondary--light u-text-center u-margin-bottom-medium"
         >
@@ -233,7 +258,7 @@
         </div>
       </div>
 
-      <div class="section-testimonials">
+      <div class="section-testimonials" id="section-testimonials">
         <h2
           class="heading-secondary heading-secondary--light u-text-center u-margin-bottom-medium"
         >
@@ -310,7 +335,7 @@
           >Read more success stories</a
         >
       </div>
-      <footer class="footer">
+      <footer class="footer" id="section-footer">
         <div class="footer__container">
           <ul class="footer__column">
             <li class="footer__text footer__text--heading">Company</li>

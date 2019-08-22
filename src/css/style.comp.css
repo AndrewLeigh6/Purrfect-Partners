@@ -355,54 +355,108 @@ a {
     align-items: center;
     justify-content: center; }
 
-.nav {
+:root {
+  /* doing it this way because a lot
+  of the css properties need matching
+  values. this stops them from getting
+  out of sync */
+  --top: 3rem;
+  --left: 4rem;
+  --height: 7.5rem;
+  --width: 7.5rem;
+  --line-height: 0.5rem;
+  --line-width: 3rem; }
+  @media only screen and (max-width: 550px) {
+    :root {
+      --top: 2rem;
+      --left: 2rem;
+      --height: 6rem;
+      --width: 6rem;
+      --line-height: 0.5rem;
+      --line-width: 2.5rem; } }
+
+.navigation {
   position: fixed;
   z-index: 100;
-  top: 3rem;
-  left: 4rem; }
-  @media only screen and (max-width: 550px) {
-    .nav {
-      top: 2rem;
-      left: 2rem; } }
-  .nav__icon {
+  top: var(--top);
+  left: var(--left); }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__icon {
+    position: relative;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #0967d2;
-    height: 7.5rem;
-    width: 7.5rem;
+    height: var(--height);
+    width: var(--width);
     border-radius: 50%;
     border: 3px solid #fff;
     cursor: pointer;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     transition: 0.5s all;
     opacity: 0.7; }
-    .nav__icon:hover {
+    .navigation__icon:hover {
       opacity: 1; }
     @media only screen and (max-width: 550px) {
-      .nav__icon {
-        height: 6rem;
-        width: 6rem;
+      .navigation__icon {
+        height: var(--height);
+        width: var(--width);
         border: 2px solid #fff; } }
-  .nav__line {
-    line-height: 0.5rem;
-    margin-bottom: 0.6rem; }
-    @media only screen and (max-width: 550px) {
-      .nav__line {
-        line-height: 0.4rem;
-        margin-bottom: 0.4rem; } }
-    .nav__line::after {
+  .navigation__line {
+    line-height: var(--line-height);
+    margin-bottom: var(--line-height); }
+    .navigation__line::after {
       content: "";
       display: inline-block;
-      height: 0.5rem;
-      width: 3rem;
+      height: var(--line-height);
+      width: var(--line-width);
       border-radius: 5px;
       background-color: #fff; }
       @media only screen and (max-width: 550px) {
-        .nav__line::after {
-          height: 0.5rem;
-          width: 2.5rem; } }
+        .navigation__line::after {
+          width: var(--line-width); } }
+  .navigation__background {
+    position: fixed;
+    z-index: 5;
+    top: var(--top);
+    left: var(--left);
+    height: var(--height);
+    width: var(--width);
+    border-radius: 50%;
+    background-color: #0967d2;
+    opacity: 0;
+    transition: all 0.4s; }
+  .navigation__nav {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.6s; }
+  .navigation__list {
+    list-style-type: none; }
+  .navigation__item {
+    color: #b1c1d8;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1;
+    padding: 2rem 0; }
+    .navigation__item:hover {
+      color: #f5f7fa; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(100);
+    opacity: 1; }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    z-index: 10;
+    opacity: 1;
+    transition: all 0s; }
 
 .section-about {
   display: flex;
