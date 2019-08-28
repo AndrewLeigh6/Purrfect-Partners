@@ -17,8 +17,7 @@
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [
-    "precommit-msg",
-    "build"
+    "precommit-msg"
   ],
   "author": "Andrew",
   "license": "ISC",
