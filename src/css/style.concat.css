@@ -432,15 +432,14 @@ a {
   .navigation__nav {
     width: 100vw;
     height: 100vh;
-    top: 0;
+    top: -100vh;
     left: 0;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all 0;
-    transition-delay: 0; }
+    transition: opacity 0s 0s; }
   .navigation__list {
     list-style-type: none; }
   .navigation__item {
@@ -457,8 +456,8 @@ a {
   .navigation__checkbox:checked ~ .navigation__nav {
     z-index: 10;
     opacity: 1;
-    transition: all 0.1s;
-    transition-delay: 0.3s; }
+    transition: opacity 0.1s 0.3s;
+    top: 0; }
 
 .section-about {
   display: flex;
