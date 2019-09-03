@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
 
-    & > *:first-child {
+    & > .testimonial--active {
       z-index: 0;
     }
 
-    & > *:not(:first-child) {
+    & > :not(.testimonial--active) {
       position: absolute;
       z-index: -1;
       box-shadow: none;

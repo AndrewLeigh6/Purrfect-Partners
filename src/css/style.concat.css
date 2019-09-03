@@ -107,9 +107,9 @@ a {
     position: relative;
     display: flex;
     flex-direction: column; }
-    .carousel__slides > *:first-child {
+    .carousel__slides > .testimonial--active {
       z-index: 0; }
-    .carousel__slides > *:not(:first-child) {
+    .carousel__slides > :not(.testimonial--active) {
       position: absolute;
       z-index: -1;
       box-shadow: none; }
