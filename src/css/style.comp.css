@@ -99,7 +99,7 @@ a {
   .button--primary {
     background-color: #0967d2; }
   .button--secondary {
-    background-color: #e12d39; }
+    background-color: #d61f2b; }
 
 .carousel {
   position: relative; }
@@ -223,7 +223,7 @@ a {
 
 .membership-card {
   background-color: #fff;
-  border-top: solid 3px #e12d39;
+  border-top: solid 3px #d61f2b;
   padding: 3rem 6rem;
   text-align: center;
   display: flex;
@@ -239,7 +239,7 @@ a {
       margin-bottom: 5rem; } }
   .membership-card__tier-name {
     text-transform: uppercase;
-    color: #e12d39;
+    color: #d61f2b;
     font-size: 2.4rem;
     margin-bottom: 6rem; }
   .membership-card__price {
@@ -253,12 +253,12 @@ a {
     color: #323f4b;
     font-size: 1.8rem; }
   .membership-card__emphasis {
-    color: #e12d39;
+    color: #d61f2b;
     font-size: 3.6rem; }
     .membership-card__emphasis--small {
       font-size: 2.4rem; }
   .membership-card__de-emphasis {
-    color: #9aa5b1;
+    color: #616e7c;
     font-size: 1.8rem; }
 
 .testimonial {

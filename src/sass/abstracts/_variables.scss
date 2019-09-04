@@ -33,7 +33,7 @@ $color-grey-dark-3: #3e4c59;
 $color-grey-dark-4: #52606d;
 $color-grey-dark-5: #616e7c;
 
-$color-red-dark: #e12d39;
+$color-red-dark: darken(#e12d39, 5); // darkened for contrast accessibility
 
 // Misc
 $border-radius: 5px;
